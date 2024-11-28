@@ -1,0 +1,45 @@
+{
+	"type": "minecraftBedrock",
+	"name": "ReNameTag",
+	"namespace": "renametag",
+	"authors": [
+		"nullun"
+	],
+	"targetVersion": "1.21.40",
+	"description": "Rename Name Tags without an Anvil",
+	"experimentalGameplay": {
+		"creationOfCustomBiomes": false,
+		"upcomingCreatorFeatures": false,
+		"enableGameTestFramework": false,
+		"focusTargetCamera": false,
+		"dataDrivenJigsawStructures": false,
+		"aimAssist": false,
+		"educationEdition": false
+	},
+	"bdsProject": false,
+	"packs": {
+		"behaviorPack": "./BP"
+	},
+	"worlds": [
+		"./worlds/*"
+	],
+	"compiler": {
+		"plugins": [
+			"generatorScripts",
+			"typeScript",
+			"entityIdentifierAlias",
+			"customEntityComponents",
+			"customItemComponents",
+			"customBlockComponents",
+			"customCommands",
+			"moLang",
+			"formatVersionCorrection",
+			[
+				"simpleRewrite",
+				{
+					"packName": "ReNameTag"
+				}
+			]
+		]
+	}
+}
